@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+/*  Organização do estilo com variáveis: 
+    :root {
+        --nomedavariável: #81e0aa;
+        --nomedavariável02: #02cc2d;
+        --nomedavariável03: #189103;
+        --nomedavariável04: rgba(0, 128, 0, 0.986);
+        --nomedavariável05: #008000;
+
+        --nomedavariávelpadrao: Arial, Verdana, Helvetica, sans-serif;
+        --nomedavariáveldestaque: 'Koulen', sans-serif;
+        --nomedavariávelandroid: 'Idroid', cursive;
+    }
+    body {
+        background-color: var(--nomedavariável02);
+        font-family: var(--nomedavariáveldestaque);
+    }
+    Essa organização é importante para economizar tempo quando houver trocas de propriedades.
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header {
+    background-image: linear-gradient(180deg, #81e0aa, #02cc2d, #189103, rgba(0, 128, 0, 0.986));
+    min-height: 120px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+header > h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Koulen', sans-serif;
+    font-weight: normal;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.418);
+}
+header > p {
+    text-align: center;
+    color: rgb(230, 230, 230);
+    max-width: 600px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 16px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.418);
+}
+nav {
+    background-color: green;
+    box-shadow: 0px 2px 3px 0px #00000062;
+    padding-bottom: 10px;
+}
+nav > a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 5px;
+}
+nav > a:hover {
+    background-color: #81e0aa;
+    color: green;
+}
+main {
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 5px 2px #00000052;
+    border-radius: 0% 0% 5px 5px;
+    padding: 10px;
+}
+main h1 {
+    font-family: 'Idroid';
+    text-align: left;
+    color: #189103;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+p {
+    text-align: justify;
+    padding: 0px 10px;
+    text-indent: 30px;
+    margin: 15px 0px;
+    line-height: 2em;
+}
+h2 {
+    background-image: linear-gradient(to right, #81e0aa, transparent);
+    color: green;
+    font-family: 'Idroid';
+    margin: 10px;
+    padding-left: 5px;
+    font-size: 1em;
+}
+strong {
+    color: green;
+    font-weight: bold;
+}
+main a {
+    color: green;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #189103;
+}
+
+img {
+    width: 100%;
+}
+.bugdroid {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+footer {
+    background-color: #006331;
+    margin-top: 50px;
+    padding-bottom: 1px;
+}
+footer > p {
+    margin-bottom: 0px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: small;
+}
+footer > p > strong {
+    color: white;
+}
+aside {
+    background-color: rgba(0, 128, 0, 0.219);
+    margin: 5px 10px 5px 10px;
+    border-radius: 8px;
+    padding-bottom: 5px;
+    box-shadow: 2px 2px 3px #00000032;
+}
+aside > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #189103;
+    color: white;
+    background-image: none;
+    margin: 10px 0px;
+    border-radius: 8px 8px 0px 0px;
+    padding: 5px;
+}/*
+.video {
+    background-color: #006331;
+    padding: 10px;
+}
+.video > iframe {
+    width: 520px;
+    height: 292px;
+    padding: inherit;
+}*/
+.video {
+    background-color: #006331;
+    margin: 0px -10px 30px -10px;
+    padding: 20px;
+    padding-bottom: 55.5%;
+    position: relative;
+}
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%
+}
+ul {
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0'; /*código não compatível com todos os navegadores*/
+    padding-left: 5px;
+}
+#final > p {
+    padding: 0px 10px 20px 10px;
+}
